@@ -1,4 +1,6 @@
-const valorInput = document.getElementById("valor");
+const euroinput = document.getElementById("euro");
+
+const dolarinput = document.getElementById("dolar");
 
 const converterInput = document.getElementById("botao-converter");
 
@@ -6,15 +8,23 @@ const resultadoInput = document.getElementById("resultado");
 
 const euro = 6;
 
+const dolar = 5.2;
+
 converterInput.addEventListener("click", () => {
-  if (valorInput.value === "") {
-    resultadoInput.innerHTML =
-      '<span class="text-danger">Digite um valor válido!</span>';
-  } else {
-    const valor = valorInput.value;
+  if (euroinput.value !== "") {
+    const valor = euroinput.value;
 
     const resultado = valor * euro;
 
-    resultadoInput.innerHTML = `<span class="text-success">O valor é R$ ${resultado.toFixed(2)}</span>`;
+    resultadoInput.innerHTML = `<span class="text-success">Resultado: R$ ${resultado.toFixed(2)}</span>`;
+  } else if (dolarinput.value !== "") {
+    const valor = dolarinput.value;
+
+    const resultado = valor * dolar;
+
+    resultadoInput.innerHTML = `<span class="text-success">Resultado: R$ ${resultado.toFixed(2)}</span>`;
+  } else {
+    resultadoInput.innerHTML =
+      '<span class="text-danger">Digite um valor válido!</span>';
   }
 });
