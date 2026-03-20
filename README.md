@@ -15,4 +15,4 @@ Projeto focado na experiência do usuário (UX) e na aplicação prática de ló
 - **Interface Git:** GitKraken
 
 ## 🔗 Link do Projeto no Ar
-[Clique aqui para testar a calculadora](SEU-LINK-AQUI)
+[Clique aqui para testar a calculadora](https://saulorubiale.github.io/CalculadoraConversao/)
